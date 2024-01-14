@@ -105,12 +105,12 @@ export class News extends Component {
         }
     }
 
-    async componentDidMount(){
-        let url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=6b441c3a187649fe9aab9b33a8d7eb74";
-        let data = await fetch(url);
-        let parsedData = await data.json()
-        this.setState({articles: parsedData.articles})
-    }
+    // async componentDidMount(){
+    //     let url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=6b441c3a187649fe9aab9b33a8d7eb74";
+    //     let data = await fetch(url);
+    //     let parsedData = await data.json()
+    //     this.setState({articles: parsedData.articles})
+    // }
 
     render() {
         return (
